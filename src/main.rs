@@ -22,5 +22,6 @@ async fn main() -> Result<(), std::io::Error> {
         configuration.application.host, configuration.application.port
         );
     let listener = TcpListener::bind(address)?;
-    run(listener,connection_pool)?.await
+    run(listener,connection_pool)?.await?;
+    Ok(())
 }
