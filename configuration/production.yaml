@@ -3,3 +3,8 @@ application:
 database:
   # New entry!
   require_ssl: true
+email_client:
+# Value retrieved from Postmark's API documentation
+base_url: "https://us12.api.mailchimp.com/3.0/"
+# Use the single sender email you authorised on Postmark!
+sender_email: "something@gmail.com"
